@@ -1,0 +1,166 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile-pic{
+    width:80px;
+    height: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(#20BF55 0%, #01BAEF 100%);
+}
+
+.links li{
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.linkedin{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(#01BAEF 0%, #0CBABA 100% );
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+}
+
+.linkedin p{
+    font-size: 24px;
+    margin: 10px;
+}
+
+.linkedin-button{
+    background-color: blue;
+    color:white;
+    border:0px;
+    padding: 5px 8px 5px 8px;
+    font-size: 24px;
+   font-family: roboto;
+   cursor: pointer;
+}
+
+.myname{
+    margin-left: 40px;
+    margin-left: 0px;
+    padding-left: 40px;
+    color: black;
+}
+
+.linked{
+    font-size: 24px;
+    width: 70px;
+    color: blue;
+    font-family: roboto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraphs{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ justify-content: center;
+ margin: 0px 20px 60px 20px;
+ font-size: 25px;
+ padding-left: 30px;
+}
+
+.meheader, .workheader, .Contactheader{
+    margin: 20px 20px 0px 20px;
+    padding: 15px;
+    width: 250px;
+    font-size: 35px;
+}
+
+.meheader{
+    height: 350px;
+    width: 250px;
+}
+
+.aboutme, .work-section{
+    display: flex;
+    border: 5px dotted lightgreen;
+    margin: 10px;
+}
+
+.java-img{
+    width: 800px;
+    border: 5px solid lightgreen;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+}
+
+.more-work{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 400px;
+    flex: 1 0 50%;
+    margin: 80px;
+    margin-left: 70px;
+    border: 5px solid lightgreen;
+    border-radius: 5px;
+}
+
+.contact-info{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-section{
+    display: flex;
+    align-items: center;
+    border: 5px dotted darkblue;
+    margin: 10px;
+}
+
+.contact-info p{
+    justify-content: center;
+    display: flex;
+    margin: 40px;
+    font-size: 35px;
+    color: darkblue;
+}
+
