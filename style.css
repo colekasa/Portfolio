@@ -130,23 +130,23 @@ section>div{
 }
 
 .javascript{
-background-image: url(javascript.png);
+background-image: url(Assets/javascript.png);
 }
 
 .react{
-background-image: url(react.jpg);
+background-image: url(Assets/react.jpg);
 }
 
 .mern{
-background-image: url(mern.png);
+background-image: url(Assets/mern.png);
 }
 
 .sql{
-background-image: url(sql.png);
+background-image: url(Assets/sql.png);
 }
 
 .project{
-background-image: url(project.png);
+background-image: url(Assets/project.png);
 }
 
 @media screen and (max-width:768px) {
