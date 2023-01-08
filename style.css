@@ -1,4 +1,6 @@
-
+:root{
+    --iceBlue: #175dc7;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -8,8 +10,14 @@
 .nav-bar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(#20BF55 0%, #01BAEF 100%);
 }
 
+h1{
+    margin: 20px;
+    font-size: 55px;
+}
 .profile-pic{
     width:80px;
     height: 80px;
@@ -18,16 +26,49 @@
     object-position: top;
 }
 
+.linked-in-button{
+    background-color: blue;
+    color:white;
+    border:0px;
+    padding: 5px 8px 5px 8px;
+    font-size: 24px;
+   font-family: roboto;
+   cursor: pointer;
+   
+}
+
+ul li{
+    margin: 20px;
+}
+
 .nav-links{
     display: flex;
     list-style: none;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .linked-in-ref{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-image: linear-gradient(#01BAEF 0%, #0CBABA 100% );
+    padding: 15px;
 }
+
+.linked-in-ref p{
+    padding: 0 6px 0 6px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.Linked{
+    font-size: 28px;
+    width: 70px;
+    color: blue;
+    font-family: roboto;
+}
+
 
 main{
     max-width: 88%;
@@ -39,18 +80,20 @@ section{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: stretch;
-    margin-bottom: 30px;
+    margin: 20px 0 ;
 }
 
 section > h2{
-    flex: 0 0 23%;
+    flex: 0 0 18%;
     text-align: right;
     padding-right: 20px;
     border-right: 3px solid black;
+    font-size: 35px;
+    color: var(--iceBlue);
 }
 
 section>div{
-    flex: 0 0 77%;
+    flex: 0 0 82%;
     padding-left: 10px;
 }
 
@@ -68,7 +111,7 @@ section>div{
     margin: 0.5em;
     flex-basis: calc(50% - 1em);
     padding: 0 0 20px 0;
-    background-size: 50%;
+    background-size: 20%;
     text-decoration: none;
     color: white;
     transition:all 0.5s;
@@ -83,27 +126,27 @@ section>div{
 
 .flex-item:first-child{
     min-height: 300px;
-    flex-basis: 100%;
+    flex-basis: 1000%;
 }
 
 .javascript{
-background-image: url(../javascript.png);
+background-image: url(javascript.png);
 }
 
 .react{
-background-image: url(../react.jpg);
+background-image: url(react.jpg);
 }
 
 .mern{
-background-image: url(../mern.png);
+background-image: url(mern.png);
 }
 
 .sql{
-background-image: url(../sql.png);
+background-image: url(sql.png);
 }
 
 .project{
-background-image: url(../project.png);
+background-image: url(project.png);
 }
 
 @media screen and (max-width:768px) {
@@ -122,4 +165,12 @@ background-image: url(../project.png);
 .contacts{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.aboutme, p{
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-size: 18px;
 }
