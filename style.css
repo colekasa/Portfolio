@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+}
+
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -48,6 +52,16 @@ ul li{
     cursor: pointer;
 }
 
+a:link { 
+    text-decoration: none;
+    color: black; 
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
 .linked-in-ref{
     display: flex;
     justify-content: flex-end;
@@ -87,7 +101,7 @@ section > h2{
     flex: 0 0 18%;
     text-align: right;
     padding-right: 20px;
-    border-right: 3px solid black;
+    border-right: 3px solid var(--iceBlue);
     font-size: 35px;
     color: var(--iceBlue);
 }
@@ -103,8 +117,12 @@ section>div{
     justify-content: center;
 }
 
+.me-paragraphs{
+    color: #20BF55;
+}
+
 .flex-item{
-    border: 5px solid black;
+    border: 5px solid var(--iceBlue);
     height: 150px;
     display: flex;
     align-items: flex-end;
@@ -116,12 +134,13 @@ section>div{
     color: white;
     transition:all 0.5s;
     background-blend-mode: soft-light;
-    background-color: rgb(19, 71, 71);
+    background-color: rgb(30, 88, 88);
 }
 
 .flex-item div{
     padding: 8px 10px;
-    background-color: blue;
+    background-color:var(--iceBlue);
+    color: #20BF55;
 }
 
 .flex-item:first-child{
@@ -159,13 +178,13 @@ background-image: url(Assets/project.png);
 }
 
 .flex-item:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3); 
 }
 
 .contacts{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -173,4 +192,9 @@ background-image: url(Assets/project.png);
     margin-bottom: 15px;
     line-height: 30px;
     font-size: 18px;
+}
+
+.contacts p{
+    font-size: 25px;
+    color: #20BF55;
 }
