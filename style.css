@@ -104,11 +104,11 @@ section {
 
 section > h2 {
   flex: 0 0 18%;
-  text-align: right;
+  text-align: center;
   padding-right: 20px;
-  border-right: 3px solid var(--iceBlue);
+  border-right: 3px solid #b85c01;
   font-size: 35px;
-  color: var(--iceBlue);
+  color: #b85c01;
 }
 
 section > div {
@@ -124,10 +124,23 @@ section > div {
 
 .me-paragraphs {
   color: white;
+  padding-left: 25px;
+}
+
+.aboutme {
+  margin-top: 60px;
+}
+
+.mywork {
+  margin-top: 60px;
+}
+
+.contactme {
+  margin-top: 60px;
 }
 
 .flex-item {
-  border: 5px solid var(--iceBlue);
+  border: 5px solid #b85c01;
   height: 150px;
   display: flex;
   align-items: flex-end;
@@ -136,7 +149,6 @@ section > div {
   padding: 0 0 20px 0;
   background-size: 20%;
   text-decoration: none;
-  color: white;
   transition: all 0.5s;
   background-blend-mode: soft-light;
   background-color: rgb(30, 88, 88);
@@ -144,8 +156,8 @@ section > div {
 
 .flex-item div {
   padding: 8px 10px;
-  background-color: var(--iceBlue);
-  color: #20bf55;
+  background-color: #b85c01;
+  color: white;
 }
 
 .flex-item:first-child {
@@ -182,6 +194,16 @@ section > div {
     min-height: 150px;
   }
 }
+
+/* @media screen and (max-width: 400px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+} */
 
 .flex-item:hover {
   background-color: rgba(0, 0, 0, 0.3);
